@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\GameController;
+use \App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/all-games', [GameController::class, 'index']);
+Route::get('/all-news', [NewsController::class, 'index']);
+
