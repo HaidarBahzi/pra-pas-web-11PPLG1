@@ -14,7 +14,7 @@
 <div>
     <h1 class="text-center mt-4">List Games</h1>
     <div class="d-flex flex-lg-wrap justify-content-sm-around">
-        @foreach ($games as $key => $item)
+        @foreach ($news as $key => $item)
             <div onclick="" class="card m-5">
                 <img src="{{$item->image}}" class="card-img">
                 <div class="card-body d-flex justify-content-sm-between align-items-center">

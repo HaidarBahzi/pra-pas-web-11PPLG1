@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\GameController;
 use \App\Http\Controllers\NewsController;
+use \App\Http\Controllers\PlayerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::get('/', function () {
 Route::get('/all-games', [GameController::class, 'index']);
 Route::get('/all-news', [NewsController::class, 'index']);
 
+Route::get('/all-players', [PlayerController::class, 'index']);
